@@ -6,6 +6,16 @@
 void *mymalloc(unsigned int size, char *file, int line);
 void myfree(void *p, char *file, int line);
 
+//I think This is better!!
+typedef struct memory
+{
+	memory* prev;
+	memory* next;
+	void* data;
+	int size;
+}
+
+
 
 
 
